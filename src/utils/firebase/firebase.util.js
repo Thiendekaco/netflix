@@ -24,7 +24,7 @@ import { getAnalytics } from "firebase/analytics";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBM0ZAo2s1PYTtyQ0nDBYfnqwGW8I0XCdk",
+  apiKey: "********************",
   authDomain: "netflix-b632a.firebaseapp.com",
   projectId: "netflix-b632a",
   storageBucket: "netflix-b632a.appspot.com",
