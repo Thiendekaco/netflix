@@ -2,7 +2,7 @@ import requests from './request';
 
 
 const fetch = require('node-fetch');
-export const keyApi =  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZDY1MjZiNzVhM2MwZjM5Y2RkMGNiNDBmZWIyMjBlZSIsInN1YiI6IjY0MzM4ZGZiMzkxYjljMDBmNDViMTg3OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lkDJoS1rvrxTr55D-h4qxLfboVGVMVPncXKNwlvqmkA"
+export const keyApi =  "******************************"
 
 
 const options = {
