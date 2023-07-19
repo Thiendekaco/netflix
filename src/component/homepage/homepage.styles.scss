@@ -1,0 +1,156 @@
+
+.home{
+    display: block;
+    .home_header{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        height: 700px;
+        
+        .home_header-logo{
+            position: absolute;
+            top: -35px;
+            left: 30px;
+            z-index: 1;
+        }
+        .home_header-background{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            filter: blur(0.6px);
+        }
+        .home_content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 700px;
+            
+            .btn_goFilm{
+                background-color: #c11119;
+                padding: 10px;
+                color: white;
+                border-radius: 10px;
+                border-color: transparent ;
+                position: relative;
+                left: 45%;
+                top: 16%;
+                height: 50px;
+            }
+            
+            img{
+                position: relative;
+                filter:brightness(130%);
+                top:3.5%;
+                left: 11.5%;
+                opacity: 0.8;
+                height: 40px;
+                width: 150px;
+                image-rendering: pixelated;
+            }
+            .home_content_text{
+                position: relative;
+                top:17%;
+                text-align: center;
+                h1{
+                    position: relative;
+                    left: 7%;
+                    font-weight: 600;
+                    font-size: 50px;
+                }
+                h1,p{
+                    margin: 30px;
+                    width: 1300px;
+                }
+                p{
+                    position: relative;
+                    left: 7%;
+                    font-weight: 450;
+                    font-size: 25px;
+                    
+                }
+
+            
+                
+            }
+            form{
+                position: relative;
+                top: 15%;
+                left: 20%;
+                display: flex;
+                flex-direction: row;
+                .form-control{
+                   width: 420px;
+                   height: 50px;
+                   background-color: rgb(0,0, 0, 0.4);
+                   margin-right: 10px;
+                   color: white;
+                }  
+                .invalid_form{
+                    border: 1px solid #c11119;
+                } 
+              
+                .btn{
+                    width: 160px;
+                    height: 55px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+              
+            
+            }
+            .notify_form{
+                color: white;
+                display: none;
+                margin-top: 5px;
+                left: 30%;
+                padding-left: 5px;
+                top: -60px;
+                border-radius: 10px;
+                width: 220px;
+                background-color: #c11119;
+                animation: fade 0.3s ease-in-out;
+                position: relative;
+            }
+            @keyframes fade {
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+         
+            .textp{
+                font-weight: 500;
+                font-size: 1000px;
+            }
+            select{
+                position: relative;
+                left: 67%;
+                top: 39px;
+                width: 150px;
+                border: solid 2px white;
+                border-radius: 6px;
+                background-color: transparent;
+                color: white;
+                padding: 10px ;
+                font-size: larger;
+            }
+            .btn-signIn{
+                position: relative;
+                left: 70%;
+                top: 35px;
+                padding: 10px 20px;
+            }
+            option{
+                border: solid 2px white;
+                border-radius:  6px;
+                background-color: transparent;
+            }
+        }
+       
+    }
+  
+    
+
+    }    

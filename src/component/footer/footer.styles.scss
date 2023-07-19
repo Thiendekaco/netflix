@@ -1,0 +1,46 @@
+.footer_page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    height: fit-content;
+    .Footer_List{
+        width: 50%;
+        margin-top: 5px;
+        .Footer_List_item{
+            list-style-type:none;
+            a{
+                color: #a39f9f;
+                
+            }
+
+        }
+        
+    }
+    select{
+        position: relative;
+        left: 0;
+        top: 7%;
+        width: 150px;
+        border: solid 2px white;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        padding: 10px ;
+        font-size: larger;
+        margin-top: 50px;
+    }
+    option{
+        border: solid 2px white;
+        border-radius:  6px;
+        background-color: transparent;
+    }
+    p{
+        position: relative;
+        padding: 0;
+        margin: auto;
+        color: #232323;
+    }
+}

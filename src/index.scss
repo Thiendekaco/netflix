@@ -1,0 +1,26 @@
+@import url(./custom.scss);
+
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  background-color: black;
+  body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    font-family:  'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+
+}
+
+
+
+

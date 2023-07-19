@@ -1,0 +1,28 @@
+
+
+.auth{
+    .auth_logo-container{
+        position: absolute;
+        z-index: 1;
+        top: -30px;
+        left: 3%;
+        opacity: 1;
+       
+
+    }
+    
+    .auth_background{
+        position: relative;
+        opacity: 0.5;
+        object-fit: cover;
+
+    }
+
+    .auth_footer{
+        position: absolute;
+        bottom: -70%;
+        opacity: 0.7;
+        background-color: black;
+        padding-bottom: 1% ;
+    }
+}

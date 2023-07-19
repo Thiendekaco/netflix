@@ -1,0 +1,84 @@
+
+
+.registration_container{
+   
+    width: 100%;
+    height: 100%;
+    position: relative;
+    hr{
+        width: 100%;
+        color: #000;
+    }
+    .registration_content{
+        width: 100%;
+        padding: auto;
+        margin: auto;
+        animation: translate 0.7s ease-in-out;
+        position: fixed;
+        @keyframes translate {
+            from{
+                left: 80%;
+
+            }
+            to{
+                left: 0;
+            }
+        }
+        .registration_box{
+            position: relative;
+            left: 40%;
+            top: 100px;
+            color: #333;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            width: 20%;
+            height: 50%;
+            .registration_image{
+                margin-bottom: 50px;
+            }
+            .registration_title, .registration_detail{
+                margin-bottom: 20px; 
+            }
+            .registration_title{
+                font-weight: 700;
+            }
+            .registration_detail{
+                font-weight: 500;
+                margin-bottom: 50px;
+            }
+            .registration_btn{
+                height: 70px;
+                width: 120%;
+                position: relative;
+                left: -20px;
+                border: solid transparent;
+                border-radius: 5px;
+                background-color: #ff0000;
+                color: white;
+                font-weight: 600;
+                font-size: x-large;
+            }
+        }
+
+    }
+}
+.signUp_header{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    .signUp_header-logo{
+        position: relative;
+        left: 40px;
+        top: -55px;
+    }
+    .signUp_header-sigin{
+        position: relative;
+        margin-left: 75%;
+        top: 25px;
+        color: black;
+        text-decoration: none ;
+        font-size: x-large;
+        height: 20px;
+    }
+}

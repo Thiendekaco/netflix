@@ -1,0 +1,159 @@
+.confirm_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    hr{
+        width: 100%;
+        color: #000;
+    }
+    .confirm_content{
+        animation: translate 0.7s ease-in-out;
+        position: fixed;
+        width: 100%;
+        @keyframes translate {
+            from{ left: 100%; }
+            to{ left: 0; }
+        }
+        .confirm_box{
+            position: relative;
+            left: 40%;
+            top: 150px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 50%;
+            .confirm_image{
+                width: 50px;
+                height: 50px;
+                margin-left: 40%;
+                color: #ff0000;
+                margin-bottom: 10px;
+            }
+            .confirm_title, .confirm_detail{
+                margin-bottom: 20px; 
+            }
+            .confirm_step{
+                margin-bottom: 10px;
+            }
+            .confirm_title{
+                font-weight: 700;
+            }
+            .confirm_detail{
+                font-weight: 500;
+            }
+            .confirm_btn{
+                height: 70px;
+                width: 100%;
+                margin-top: 30px;
+                position: relative;
+                border: solid transparent;
+                border-radius: 5px;
+                background-color: #ff0000;
+                color: white;
+                font-weight: 600;
+                font-size: x-large;
+            }
+            .form_group{
+                .form_input{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 5px;
+                    border: double 1px gray;
+                    background-color: transparent;
+                    margin-bottom: -10px;
+                    padding-left: 10px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                .form_label{
+                    position: relative;
+                    transform: scale(1.3) translate(5px, -22px);
+                    transform-origin: left bottom;
+                    transition: ease-in-out 0.3s;
+                    margin-left: 10px;
+                    opacity: 0.5;
+                }
+                .form_input:focus + .form_label,
+                .form_input:not(:placeholder-shown) + .form_label{
+                    opacity: 1;
+                    color: gray;
+                    transform: scale(0.9) translate(0px, -55px);
+                    cursor: pointer;
+                }
+                
+                .correct_form{
+                    border: 1px solid #2bb871;
+                }
+                .invalid_form{
+                    border: 1px solid #c11119;
+                }
+            }
+            .checkbox_container{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                .form_checkBox{
+                    top: 0;
+                    position: relative;
+                    left: 0;
+                    width: 0;  
+                    height: 0;
+                }
+                .checkmark{
+                    position: relative;
+                    margin-right: 10px;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    border: solid 1px black;
+                    border-radius: 2px;
+                }
+                .checkmark:hover{
+                    background-color: #ccc;
+                }
+                .checkmark::after{
+                    content: '';
+                    position: absolute;
+                    display: none;
+                }
+               .checkmark::after{
+                    left: 7px;
+                    width: 7px;
+                    border-radius: 2px;
+                    height: 14px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    transform: rotate(45deg);
+                }
+                .form_checkBox:checked  + .checkmark{
+                    background-color: #2bb871;
+                }
+                .form_checkBox:checked + .checkmark::after{
+                    display: block;
+                }
+                
+            }
+            .checkbox_container:hover + .notify_form{
+                display: block;
+            }
+            .notify_form{
+                color: #c11119;
+                display: none;
+                margin-top: 5px;
+                animation: shake ease-in-out 0.2s 2 ;
+                position: relative;
+                
+                
+            }
+            @keyframes shake {
+                from{left: -2px;}
+                to{left: 2px}
+            }
+        }
+
+    }
+}

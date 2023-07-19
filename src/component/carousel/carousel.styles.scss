@@ -1,0 +1,129 @@
+
+
+    
+    .carousel_container{
+        z-index: 0;
+        .control_pre, .control_next{
+            width: 50px;
+            height: 165px;
+            background-color: transparent;
+            border: 1px double transparent;
+            position: relative;
+            animation: 0.5s;
+            font-size: xx-large;
+            font-weight: 900;
+            color: transparent;
+            
+        }
+        
+        .control_next{
+            border-radius: 0px 10px 10px 0;
+            left: -100px;
+            z-index: 1;
+        }
+        .control_pre{
+            border-radius: 10px 0px 0px 10px;
+            left: -5px;
+            z-index: 1;
+        }
+        .control_pre:hover , 
+        .control_next:hover  {
+        background-color: rgba(39, 36, 36, 0.5);
+        border: 2px double rgb(71, 77, 75);
+        color: white
+    }
+     
+        .film_poster_box{
+            display: inline-flex;
+            padding: 0;
+            z-index: -1;
+            box-sizing: border-box;
+            .film_poster{
+                left: -50px;
+                position: relative;
+                width:  220px ;
+                height: 160px;
+                z-index: 0;
+                margin: 0 22px;
+                border: 0px solid transparent;
+                border-radius: 7px;
+                top: -54px;
+                cursor: pointer;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                animation: reverseToRadius ease-in-out 0.3s;
+                @keyframes reverseToRadius {
+                    from{
+                        border-radius: 0px;
+                        transform: scale(1.3, 1.3);
+                    }
+                    to{
+                        border-radius: 10px;
+                        transform: scale(1, 1);
+                    }
+                }
+                .film_poster_features{
+                    position: relative;
+                    top: 40px;
+                    opacity: 0;
+                    display: block;         
+                    width: 100%;
+                    height: 50%;
+                    .film_poster_title{
+                        margin-left: 5px;
+                        width: 100%;
+                        font-size: smaller;
+                        letter-spacing: 0.3px;
+                    }
+                    .film_gener_box{
+                        display: flex;
+                        margin-left: 5.5px;
+                        
+                       .film_poster_gener{
+                            font-size: x-small;
+                            margin-right: 3px;
+                       }
+                    }
+                }
+                
+            }
+    
+        }
+        .film_poster_box:hover  .film_poster {
+            border-radius: 0;
+            z-index: 1;
+            transform: scale(1.3, 1.3);
+            animation: toRadius 0.3s ease-in-out;
+            mask-image: linear-gradient(black, transparent);
+            
+        }
+        @keyframes toRadius {
+            from{
+                border-radius: 10px;
+                transform: scale(1.1, 1.1);
+            }
+            to{      
+                border-radius: 0;
+                transform: scale(1.3, 1.3);
+            }
+        }
+       
+       .film_poster_box:hover .film_poster_features{
+            display: block;
+            animation: transl ease-in-out 0.5s;
+            opacity: 1;
+       }
+       @keyframes transl {
+                
+        from{
+            transform: translateX(-20px);
+            opacity: 0;}
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+       
+        
+}

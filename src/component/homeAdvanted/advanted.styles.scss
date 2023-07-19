@@ -1,0 +1,129 @@
+.home_contents{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    background-color:  #232323;
+    .content{
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: row ;
+        width: 100%;
+        margin-top: 10px;
+        min-height: 580px;
+        border: transparent;
+        background-color: #000;
+       
+        .content_text, .content_image{
+           margin: 10% 0;
+           width: 50%;
+           height: 100%;
+      
+        }
+        .content_text{
+            text-align: center;
+            position: relative;
+            top: 29.3%;
+            left: 13%;
+            
+            h1{
+                font-weight: 600;
+                font-size: 50px;
+            }
+            h1,p{
+                text-align: start;
+                width: 75%;
+            }
+            p{
+                margin-top: 30px;
+                font-weight: 450;
+                font-size: 25px;
+            }
+        }
+        .content_image{
+            .pic_0, .pic_1{
+                position: relative;
+                width: 70%;
+                height: 70%;
+                z-index: 1;
+                top:7%;
+               
+            }
+            .pic_00{
+                position: relative;
+                width: 68%;
+                top: 6%;
+            }
+            .home_box_picture{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                background-color: #000;
+                border: solid #232323;
+                border-radius: 7px;
+                width: 20%;
+                height: 9%;
+                top: 64%;
+                left: 56.7%;
+                justify-content: space-between;
+                .pic_01{
+                    position: relative;
+                    left: 2%;
+                    top: 6%;
+                    border-radius: 2px;
+                    height: 90%;
+                    width: 15%;
+            
+                }
+                .icon_gif{
+                    width: 20%;
+                    height: 100%;
+                }
+
+            }
+            
+            video{
+                position: absolute;
+                z-index: 0;
+            }
+            .video_0{
+                bottom: 36%;
+                right: 14%;
+                width: 37%;
+                height: 30%;
+            }
+            .video_3{
+                top: 16%;
+                left: 19%;
+                width: 22%;
+                height: 55%;
+            }
+        }
+    }
+    .content_row1{
+        flex-direction: row-reverse;
+        .content_text{
+            left: 0;
+            right: 13%;
+        }
+        .content_image{
+            .pic_0{
+                left: 25%;
+                top: 20%;
+            }
+        }
+    }
+     
+}
+.title_collapse_box{
+    margin: 5% 5%;
+    position: relative;
+    left: 32%;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+  
+
+}

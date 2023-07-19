@@ -1,0 +1,92 @@
+.BtnPlayLarge{
+    width: 130px;
+    height: 40px;
+    border:  double 1px white;
+    background-color: #ff0000;
+    color: white;
+    border: 0px;
+    border-radius: 7px;
+    margin-right: 10px;
+    .icon{
+        margin-right: 10px;
+    }
+    
+}
+.BtnPlayLarge:hover{
+    background-color: #ff0000;
+}
+
+.BtnPlayCircle, 
+.BtnLikeHeart, 
+.BtnAddWatchList,
+.BtnClose{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 0px solid transparent;
+    margin: 0 2px;
+    font-size: large;
+
+    .icon{
+        position: relative;
+        left: -6px;
+        top: -3px;
+        z-index: 0;
+    }
+    
+    .BtnHandle{
+        height: 20px;
+        width: 20px;
+        z-index: 1;
+        left: -7px;
+        top: 20px;
+        position: relative;
+        background-color: transparent;
+    }
+    
+}
+
+
+.BtnAddLargeWatchList, 
+.BtnSetVolume, 
+.BtnCloseInfoBox{
+    background-color: transparent;
+    width: 40px;
+    height: 50px;
+    color: white;
+    border: 0px solid transparent;
+    margin: 0 2px;
+    font-size: xx-large;
+
+    .icon{
+        position: relative;
+        top: -25px;
+        z-index: 0;
+        margin-bottom: 10px;
+    }
+    
+    .BtnHandle{
+        height: 33px;
+        width: 35px;
+        z-index: 1;
+        border-radius: 50px;
+        left: -2px;
+        top: 17px;
+        position: relative;
+        background-color: transparent;
+    }
+    
+}
+.BtnHandle:hover + .icon{
+    color: #ff0000 !important;
+    animation: toFade 0.5s ease-in-out;
+
+}
+@keyframes toFade {
+    from{
+        color: white;
+    }
+    to{
+        color:#ff0000;
+
+    }
+}
